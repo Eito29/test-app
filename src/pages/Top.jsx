@@ -19,9 +19,9 @@ export default function Top() {
                       </small>
                       <div>
                         {/* カテゴリ用に繰り返し処理 */}
-                        {post.categories.map((Category) => {
+                        {post.categories.map((category) => {
                           return (
-                            <span key={Category} className={classes.postsCategory}>{Category}</span>
+                            <span key={category} className={classes.postsCategory}>{category}</span>
                           );
                         })}
                       </div>
