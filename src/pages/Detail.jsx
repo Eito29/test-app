@@ -11,6 +11,10 @@ export const Detail = () => {
   // postItem.idとparams.id（整数）を比較し、一致する投稿を取得
   const post = posts.find((postItem) => postItem.id === parseInt({id}.id));
 
+  if (!post) {
+    return <div className={classes.notFound}>記事が見つかりません</div>
+  }
+
   return (
     <>
       <div className={classes.list}>
